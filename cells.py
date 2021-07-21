@@ -27,7 +27,7 @@ class Cell():
             +         self.gameState[x%self.nxC,(y+1)%self.nyC])
 
 
-        if self.gameState[x,y]==1 and (n_neigh==2 or n_neigh==3):
+        if self.gameState[x, y] == 1 and n_neigh in [2, 3]:
             return 1
 
         elif self.gameState[x,y]==0 and n_neigh==3:
